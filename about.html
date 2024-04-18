@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="home.html"><i class="fas fa-birthday-cake"></i></a></li>
+      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>Unleash Your Sweet Tooth.</p>
+  </div>
+
+  <div class="image-slider">
+    <div class="slide">
+      <img src="images/IMG_4087-feature-2.jpg" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="images/digger-cake_0-c4711f0.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="images/Chocolate-Strawberry-Celebration-Cake_EXPS_FT20_46655_F_0716_1-4.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <div>
+    <h2>Mission</h2>
+    <p> To be a best manufacturer of baked products and services in our cake industries by providing to exceed our customers’ expectations in quality, delivery, and low cost through strong work ethic , continuous improvement and customer interaction.</p>
+  </div>
+  <div>
+    <h2>Quality</h2>
+    <p>We are committed to delivering high-quality products made with the finest ingredients and crafted with precision.</p>
+  </div>
+
+  <div>
+    <h2>History</h2>
+    <p>Our bakery was established in 1994, with a vision to provide delicious baked goods to our community. Since then, we have grown and expanded our offerings while maintaining our commitment to quality and customer satisfaction.</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Rijan Buddhacharya. All rights reserved.</p>
+</footer>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlides() {
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
+  }
+
+  showSlides();
+</script>
+
+</body>
+</html>
